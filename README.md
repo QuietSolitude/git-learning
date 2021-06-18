@@ -1,2 +1,2 @@
 # GIT Learning
-“\nHello world!"
+“Hello world!"
