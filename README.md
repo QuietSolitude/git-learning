@@ -11,7 +11,7 @@
       git branch -M main 是更改分支名字为main。
       git add 是讲文件加入stage区
       git remote add 远程服务器名称 远程URL 将本地服务器和远程服务器相关联。
-      git push origin main -u 是讲已经修改的文件push到远程服务器。
+      git push origin main -u 是讲已经修改的文件push到远程服务器。第二次将不需要使用-u
       git pull origin main 将远程服务器的代码库的内容拉到本地服务器。
       git remote add origin https://<用户名>:<密码>@远程URL
       git remote rm origin 删除关联的远处服务器、
@@ -27,5 +27,5 @@
       rm -rf 删除文件夹
       mkdir 创建文件夹
       ls -al 列出包含隐藏文件夹在内的文件
-      
+
       
