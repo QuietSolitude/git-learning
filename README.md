@@ -19,7 +19,7 @@
       git remote update --prune 将远程的信息同步到本地服务器，但不改变本地代码
       git fetch origin 也是将远程的信息同步到本地服务器，也不改变本地代码，和update的区别是一次性只同步一个remote或者branch的信息。
       git remote -v 看git关联的信息
-### Git bash常用命令
+### bash常用命令
       touch 是创建新文件
       mv 移动文件
       cp 拷贝文件
