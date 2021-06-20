@@ -13,7 +13,7 @@
       git remote add 远程服务器名称 远程URL 将本地服务器和远程服务器相关联。
       git push origin main -u 是讲已经修改的文件push到远程服务器。第二次将不需要使用-u
       git pull origin main 将远程服务器的代码库的内容拉到本地服务器。
-      git remote add origin https://<用户名>:<密码>@远程URL
+      git remote add origin https://<用户名>:<密码>@远程URL   关联远程服务器第二种方法。
       git remote rm origin 删除关联的远处服务器、
       git remote set-url origin 修改关联的远程服务器。
       git remote update --prune 将远程的信息同步到本地服务器，但不改变本地代码
