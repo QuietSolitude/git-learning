@@ -24,11 +24,12 @@
 * git fetch origin 也是将远程的信息同步到本地服务器，也不改变本地代码，和update的区别是一次性只同步一个remote或者branch的信息。
 * git remote -v 看git关联的信息
 
-### Git特殊的文件
+### .gitignore
+* .gitignore文件是忽略指定的文件或文件夹。
 
 * 由于我们在搭建依赖环境或者在编译的时候，总会有一些系统自己生成的文件别的系统不一定能用或者是我们存储的密码配置等一般不push 到GitHUB，
-但是当git commit的时候会一直显示在Untrached files，我们为了让git不要在显示这些信息。我们可以创建.gitkeep的文件并打开文件在里面填写
-要忽略的文件名就可以让git这些文件。
+但是当git commit的时候会一直显示在Untrached files，提示你要add，我们为了让git不要在显示这些信息。我们可以创建.gitignore的文件并打开文
+件在里面填写要忽略的文件名就可以让git这些文件。
 
 ### bash常用命令
 
