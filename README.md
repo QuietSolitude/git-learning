@@ -1,4 +1,4 @@
-# GIT Learing
+# GIT Learning
 ## Git是一个分布式的版本管理系统。
 
 * 分布式是指所有的git服务器的地位都是相等没有主次之分
@@ -23,9 +23,14 @@
 * git remote update --prune 将远程的信息同步到本地服务器，但不改变本地代码
 * git fetch origin 也是将远程的信息同步到本地服务器，也不改变本地代码，和update的区别是一次性只同步一个remote或者branch的信息。
 * git remote -v 看git关联的信息
+* git reset命令  提交一次错误的代码返回前一个版本的三种用法
+  * git reset --hard HEAD^ 即往前回退一个版本，回退完了后工作区就是上一个版本的代码了，并且是clean的。
+  * git reset --soft HEAD^ 往前回退一个版本，并且将这次错误的提交的代码改动，放在暂存区里。
+  * git reset --mixed HEAD^（和不带参数是一样的）往前回退一个版本，并且将这次错误的提交的代码改动，放在工作区里。
+* git push origin HEAD --force 强推返回远程仓库的上一个版本，但是错误的记录就会消失了。
 
-### .gitignore
-* .gitignore文件是忽略指定的文件或文件夹。
+### .ignore
+* .ignore文件是忽略指定的文件或文件夹。 例如 *.txt 忽略所有txt.后缀的文件， C/ 是忽略斜杠号。
 
 * 这些指定的文件或者文件夹是不能push到github。
   * 比如系统自动生成的文件，不一定能够兼容，有可能使用的操作系统不一样。
@@ -42,5 +47,11 @@
 * rm -rf 删除文件夹
 * mkdir 创建文件夹
 * ls -al 列出包含隐藏文件夹在内的文件
+
+### push常见的错误
+ * error: failed to push some refs to 'https://gitee.com/solitudegitee/learning-notes.git'
+   * 解决方法是 
+     * 1.想把本地完全强制推送过去就git push origin main -f
+     * 2.如果想与远程代码合并，那就git pull origin main合并代码，然后再推送。
 
       
